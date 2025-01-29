@@ -1,0 +1,36 @@
+<h1> Форма зворотьного звязку с клубом</h1>
+<form action="send.php" method="POST">
+    <div> <label for="name">Имя:</label></div>
+    <input type="text" id="name" name="name" required>
+    <div>
+        <label for="email">Email:</label>
+    </div>
+    <input type="email" id="email" name="email" required>
+
+    <div><label>оберіть вашу стать:</label></div>
+    <input type="radio" id="male" name="gender" value="male">
+    <div> <label for="male">Чоловік</label></div>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <div> <label for="female">Жінка</label></div>
+
+    <div> <label for="female">Оберіть ваше місто</label></div>
+    <select id="city" name="city">
+        <option value="kyiv">Київ</option>
+        <option value="lviv">Львів</option>
+        <option value="odessa">Дніпро</option>
+        <option value="lviv">Одеса</option>
+        <option value="odessa">Запоріжжя</option>
+        <option value="lviv">Харків</option>
+        <option value="odessa">Миколаїв</option>
+    </select>
+
+    <div> <label>
+            <input type="checkbox" name="agree" required>
+            Я згоден з умовами
+        </label></div>
+
+    <button type="submit">Отправить</button>
+</form>
+Номер телефону для зв'язку <a href="tel:+380666666666">066 66 66 666</a><br>
+Пошта для зв'язку <a href="mailto:fcdnipro@gmail.com">fcdnipro@gmail.com</a>
