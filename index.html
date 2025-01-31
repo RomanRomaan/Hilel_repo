@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>FC Dnipro team</title>
 </head>
 
 <body>
     <header>
-        <h1 align="center">Дніпро (футбольний клуб, Дніпро)</h1>
+        <h1>Дніпро (футбольний клуб, Дніпро)</h1>
     </header>
 
-    <img align="center" src="https://upload.wikimedia.org/wikipedia/uk/c/cc/Fcdniprologonew.png" alt="logo_of_club">
+    <img class="logo__img" src="https://upload.wikimedia.org/wikipedia/uk/c/cc/Fcdniprologonew.png" alt="logo_of_club">
     <main>
         <section>
             <ul>
@@ -37,15 +38,15 @@
                 Подивитись ролік на ютубі
             </a>
             <h3>Стадіон Дніпро арена</h3>
-            <iframe
+            <iframe id="map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.368993376238!2d34.99899531521983!3d48.46221397925186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe302e42b405b%3A0xacdca89d94c50bf!2sDnipro-Arena!5e0!3m2!1sen!2sua!4v1701234567890!5m2!1sen!2sua"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
 
         </section>
         <section>
-            <h2>Найкращий результат у чемпіонаті України</h2>
-            <table border="1">
+            <h2 id="best__result">Найкращий результат у чемпіонаті України</h2>
+            <table class="table__scores" border="1">
                 <tr>
                     <th>М</th>
                     <th>Команда</th>
@@ -97,15 +98,15 @@
                     <td>53</td>
                 </tr>
             </table>
-            <div align="center">
+            <nav class="navi">
                 <a href="/pages/contact.html">Контакти</a>
                 <a href="/pages/gallery.html">Галерея</a>
                 <a href="https://fcdnipro.com/">Сайт клубу</a>
-            </div>
+            </nav>
         </section>
     </main>
     <footer>
-        <p>© 2025 Усі права захищені</p>
+        <p class="copyright">© 2025 Усі права захищені</p>
     </footer>
 </body>
 

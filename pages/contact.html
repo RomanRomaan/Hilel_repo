@@ -1,36 +1,61 @@
-<h1> Форма зворотьного звязку с клубом</h1>
-<form action="send.php" method="POST">
-    <div> <label for="name">Имя:</label></div>
-    <input type="text" id="name" name="name" required>
-    <div>
-        <label for="email">Email:</label>
-    </div>
-    <input type="email" id="email" name="email" required>
+<!DOCTYPE html>
+<html lang="en">
 
-    <div><label>оберіть вашу стать:</label></div>
-    <input type="radio" id="male" name="gender" value="male">
-    <div> <label for="male">Чоловік</label></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Контакти</title>
+</head>
 
-    <input type="radio" id="female" name="gender" value="female">
-    <div> <label for="female">Жінка</label></div>
+<body>
+    <h1> Форма зворотьного звязку с клубом</h1>
+    <form action="send.php" method="POST" class="form">
+        <div class="form-group">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+        </div>
 
-    <div> <label for="female">Оберіть ваше місто</label></div>
-    <select id="city" name="city">
-        <option value="kyiv">Київ</option>
-        <option value="lviv">Львів</option>
-        <option value="odessa">Дніпро</option>
-        <option value="lviv">Одеса</option>
-        <option value="odessa">Запоріжжя</option>
-        <option value="lviv">Харків</option>
-        <option value="odessa">Миколаїв</option>
-    </select>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+        </div>
 
-    <div> <label>
-            <input type="checkbox" name="agree" required>
-            Я згоден з умовами
-        </label></div>
+        <div class="form-group">
+            <label>Оберіть вашу стать:</label>
+            <div class="form-radio-group">
+                <input type="radio" id="male" name="gender" value="male" class="form-radio">
+                <label for="male">Чоловік</label>
 
-    <button type="submit">Отправить</button>
-</form>
-Номер телефону для зв'язку <a href="tel:+380666666666">066 66 66 666</a><br>
-Пошта для зв'язку <a href="mailto:fcdnipro@gmail.com">fcdnipro@gmail.com</a>
+                <input type="radio" id="female" name="gender" value="female" class="form-radio">
+                <label for="female">Жінка</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="city">Оберіть ваше місто:</label>
+            <select id="city" name="city" class="form-select">
+                <option value="kyiv">Київ</option>
+                <option value="lviv">Львів</option>
+                <option value="dnipro">Дніпро</option>
+                <option value="odesa">Одеса</option>
+                <option value="zaporizhzhia">Запоріжжя</option>
+                <option value="kharkiv">Харків</option>
+                <option value="mykolaiv">Миколаїв</option>
+            </select>
+        </div>
+
+        <div class="form-group form-checkbox">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">Я згоден з умовами</label>
+        </div>
+
+        <button type="submit" class="form-button">Відправити</button>
+    </form>
+
+    </form>
+    Номер телефону для зв'язку <a href="tel:+380666666666">066 66 66 666</a><br>
+    Пошта для зв'язку <a href="mailto:fcdnipro@gmail.com">fcdnipro@gmail.com</a>
+</body>
+
+</html>

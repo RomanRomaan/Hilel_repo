@@ -1,0 +1,122 @@
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    line-height: 20px;
+    text-align: center;
+}
+
+.logo__img {
+    display: block;
+    margin: auto;
+}
+
+#best__result {
+    text-align: center;
+}
+
+.table__scores {
+    margin: auto;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.navi {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.navi a {
+    border: 1px solid black;
+    padding: 3px;
+    background-color: rgb(33, 153, 97);
+    text-decoration: none;
+    color: white;
+
+
+}
+
+#map {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.form-input,
+.form-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.form-radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.form-radio {
+    margin-right: 5px;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-button:hover {
+    background-color: #2980b9;
+}
